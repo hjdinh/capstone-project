@@ -1,0 +1,1 @@
+json.array! @tag_statuses, partial: 'tag_statuses/tag_status', as: :tag_status

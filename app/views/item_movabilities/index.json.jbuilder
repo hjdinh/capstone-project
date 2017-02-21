@@ -1,0 +1,1 @@
+json.array! @item_movabilities, partial: 'item_movabilities/item_movability', as: :item_movability

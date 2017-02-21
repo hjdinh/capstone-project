@@ -1,0 +1,1 @@
+json.partial! "tag_statuses/tag_status", tag_status: @tag_status

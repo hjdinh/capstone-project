@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  item_movability_id: 1
+  item_id: 1
+  item_condition: MyString
+  loan_date: 2017-02-20 18:17:37
+  due_date: 2017-02-20 18:17:37
+
+two:
+  user_id: 1
+  item_movability_id: 1
+  item_id: 1
+  item_condition: MyString
+  loan_date: 2017-02-20 18:17:37
+  due_date: 2017-02-20 18:17:37
