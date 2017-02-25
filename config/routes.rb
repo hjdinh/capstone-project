@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  # get 'credential/user_id:string'
+
+   # get 'credential/password:string'
+
   resources :time_slots
   resources :zips
   resources :countries
@@ -9,6 +13,7 @@ Rails.application.routes.draw do
   resources :buildings
   resources :tag_statuses
   resources :vendors
+  resources :credentials
   resources :items
   resources :item_movabilities
   resources :forms
