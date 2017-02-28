@@ -10,9 +10,24 @@
 
     <% if user_signed_in? %>
     <p>Welcome, <%= current_user.name %> - <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %>
-
     <br>
-
+      <div class = "header" id="header">
+        <h1>Concave Consulting</h1>
+    <p><%=link_to "Forms", forms_path%>
+      <%=link_to "Items", items_path%>
+      <%=link_to "Item Movability", item_movabilities_path%>
+      <%=link_to "Item Status", item_statuses_path%>
+      <%=link_to "Loan History", loan_histories_path%>
+      <%=link_to "Order Requests", order_requests_path%>
+      <%=link_to "Tag Status", tag_statuses_path%>
+      <%=link_to "Vendors", vendors_path%>
+      <%=link_to "Zipcodes", zips_path%>
+      <%=link_to "Buildings", buildings_path%>
+      <%=link_to "Cities", cities_path%>
+      <%=link_to "States", states_path%>
+      <%=link_to "Countries", countries_path%>
+    </p>
+    </div>
     <% end %>
 <%= yield %>
 
