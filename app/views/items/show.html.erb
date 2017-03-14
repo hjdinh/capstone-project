@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @item.vendor_id %>
+</p>
+
+<p>
+  <strong>Item status:</strong>
+  <%= @item.item_status_id %>
+</p>
+
+<p>
+  <strong>Tag type:</strong>
+  <%= @item.tag_type_id %>
+</p>
+
+<p>
+  <strong>Item category:</strong>
+  <%= @item.item_category_id %>
+</p>
+
+<p>
+  <strong>Building:</strong>
+  <%= @item.building_id %>
+</p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @item.serial_number %>
+</p>
+
+<p>
+  <strong>Item name:</strong>
+  <%= @item.item_name %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

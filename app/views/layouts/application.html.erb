@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UpdatedProject</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <% if user_signed_in? %>
+    <p>Hello, <%= current_user.email %> - <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %></p>
+    <br>
+    <div class = "header" id="header">
+      <h1>Concave Consulting</h1>
+      <p><%=link_to "Package Request", package_requests_path%>
+        <%=link_to "Items", items_path%>
+        <%=link_to "Item Locations", item_locations_path%>
+        <%=link_to "Item Status", item_statuses_path%>
+        <%=link_to "Item Categories", item_categories_path%>
+        <%=link_to "Loan History", loan_histories_path%>
+        <%=link_to "Order Requests", order_requests_path%>
+        <%=link_to "Tag Type", tag_types_path%>
+        <%=link_to "Vendors", vendors_path%>
+        <%=link_to "Zipcodes", zips_path%>
+        <%=link_to "Buildings", buildings_path%>
+        <%=link_to "Cities", cities_path%>
+        <%=link_to "States", states_path%>
+        <%=link_to "Countries", countries_path%>
+    <% end %>
+<%= yield %>
+</p>
+</div>
+</body>
+</html>
