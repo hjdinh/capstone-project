@@ -21,15 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :city %><br>
-    <%= f.text_field :city %>
+    <%= f.collection_select :city, City.all, :id, :city_name %>
   </div>
   <div class="field">
     <%= f.label :state %><br>
-    <%= f.text_field :state %>
+    <%= f.collection_select :state, State.all, :id, :state_name %>
   </div>
   <div class="field">
     <%= f.label :country %><br>
-    <%= f.text_field :country %>
+    <%= f.collection_select :country, Country.all, :id, :country_name %>
   </div>
   <div class="field">
     <%= f.label :phone_number %><br>
@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :zip %><br>
-    <%= f.number_field :zip %>
+    <%= f.collection_select :zip, Zip.all, :id, :zipcode %>
   </div>
   <div class="actions">
     <%= f.submit %>

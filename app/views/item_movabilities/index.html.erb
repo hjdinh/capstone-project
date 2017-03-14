@@ -1,12 +1,17 @@
 <p id="notice"><%= notice %></p>
-
+<style>
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+</style>
 <h1>Listing Item Movabilities</h1>
 
 <table>
   <thead>
     <tr>
       <th>Movable</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -16,7 +21,7 @@
         <td><%= item_movability.movable %></td>
         <td><%= link_to 'Show', item_movability %></td>
         <td><%= link_to 'Edit', edit_item_movability_path(item_movability) %></td>
-        <td><%= link_to 'Destroy', item_movability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', item_movability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
