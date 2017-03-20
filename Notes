@@ -1,0 +1,21 @@
+Things that need to be changed/updated:
+
+BUILDING
+Building name should be building number. The description is the name
+
+VENDOR
+On Vendor view - Remove city, state, country, phone number and zip
+Remove presence validation for email
+
+ITEM
+Remove presence validations for serial number, building, tag status and vendor
+Fields for Item Category, Tag Type and Tag Number
+Serial Number needs to be change to String instead of Integer
+
+ITEM CATEGORY
+Table needs to be created in the database
+Fields are Category and Description
+
+
+ERD - ITEM
+Attributes for Tag Number and Item Category

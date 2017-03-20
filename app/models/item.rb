@@ -5,10 +5,5 @@ class Item < ActiveRecord::Base
   belongs_to :tag_status
   belongs_to :vendor
   belongs_to :item_status
-  validates_presence_of :vendor_id
-  validates_presence_of :item_status_id
-  validates_presence_of :tag_status_id
-  validates_presence_of :building_id
-  validates_presence_of :serial_number
-  validates_presence_of :item_name
+
 end
