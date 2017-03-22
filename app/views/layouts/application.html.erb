@@ -9,7 +9,7 @@
 <body>
 
     <% if user_signed_in? %>
-    <p>Hello, <%= current_user.email %> - <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %></p>
+    <p>Hello, <%= current_user.email%> - <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %></p>
     <br>
     <div class = "header" id="header">
       <h1>Concave Consulting</h1>
