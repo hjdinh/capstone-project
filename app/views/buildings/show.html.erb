@@ -1,13 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Building description:</strong>
-  <%= @building.building_description %>
+  <strong>Building Name:</strong>
+  <%= @building.building_name %>
 </p>
 
 <p>
-  <strong>Building name:</strong>
-  <%= @building.building_name %>
+  <strong>Building Code:</strong>
+  <%= @building.building_code %>
+</p>
+
+<p>
+  <strong>Building Number:</strong>
+  <%= @building.building_number %>
 </p>
 
 <%= link_to 'Edit', edit_building_path(@building) %> |

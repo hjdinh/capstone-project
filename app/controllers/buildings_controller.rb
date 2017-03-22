@@ -69,6 +69,6 @@ class BuildingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def building_params
-      params.require(:building).permit(:building_description, :building_name)
+      params.require(:building).permit(:building_name, :building_code, :building_number)
     end
 end

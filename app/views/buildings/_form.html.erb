@@ -12,12 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :building_description %><br>
-    <%= f.text_field :building_description %>
-  </div>
-  <div class="field">
     <%= f.label :building_name %><br>
     <%= f.text_field :building_name %>
+  </div>
+
+    <div class="field">
+      <%= f.label :building_code %><br>
+      <%= f.text_field :building_code %>
+    </div>
+
+  <div class="field">
+    <%= f.label :building_number %><br>
+    <%= f.text_field :building_number %>
   </div>
   <div class="actions">
     <%= f.submit %>

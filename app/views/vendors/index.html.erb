@@ -7,11 +7,6 @@
     <tr>
       <th>Vendor name</th>
       <th>Email</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Phone number</th>
-      <th>Zip</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,11 +16,6 @@
       <tr>
         <td><%= vendor.vendor_name %></td>
         <td><%= vendor.email %></td>
-        <td><%= vendor.city %></td>
-        <td><%= vendor.state %></td>
-        <td><%= vendor.country %></td>
-        <td><%= vendor.phone_number %></td>
-        <td><%= vendor.zip %></td>
         <td><%= link_to 'Show', vendor %></td>
         <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
         <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
