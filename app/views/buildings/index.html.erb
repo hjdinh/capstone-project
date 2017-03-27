@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Buildings</h1>
+<%= form_tag(buildings_path, method: :get) do %>
+    <%= text_field_tag :building %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
+<table>
+  <thead>
+    <tr>
+      <th>Building Name</th>
+      <th>Building Code</th>
+      <th>Building Number</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @buildings.each do |building| %>
+      <tr>
+        <td><%= building.building_name %></td>
+        <td><%= building.building_code %></td>
+        <td><%= building.building_number %></td>
+        <td><%= link_to 'Show', building %></td>
+        <td><%= link_to 'Edit', edit_building_path(building) %></td>
+        <td><%= link_to 'Delete', building, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Building', new_building_path %>

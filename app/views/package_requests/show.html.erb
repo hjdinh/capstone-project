@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @package_request.user_id %>
+</p>
+
+<p>
+  <strong>Item location:</strong>
+  <%= @package_request.item_location_id %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @package_request.item_id %>
+</p>
+
+<p>
+  <strong>Item condition:</strong>
+  <%= @package_request.item_condition %>
+</p>
+
+<p>
+  <strong>Package status:</strong>
+  <%= @package_request.package_status %>
+</p>
+
+<p>
+  <strong>Check in:</strong>
+  <%= @package_request.check_in %>
+</p>
+
+<p>
+  <strong>Loan date:</strong>
+  <%= @package_request.loan_date %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @package_request.due_date %>
+</p>
+
+<%= link_to 'Edit', edit_package_request_path(@package_request) %> |
+<%= link_to 'Back', package_requests_path %>
