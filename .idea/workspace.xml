@@ -76,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1028,7 +1028,7 @@
       <workItem from="1490577073704" duration="808000" />
       <workItem from="1490585097066" duration="4434000" />
       <workItem from="1490646482421" duration="10867000" />
-      <workItem from="1490662089814" duration="719000" />
+      <workItem from="1490662089814" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="new updated project">
       <created>1490659897289</created>
@@ -1048,7 +1048,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66058000" />
+    <option name="totallyTimeSpent" value="66611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1118" height="873" extended-state="0" />
@@ -1474,7 +1474,7 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
