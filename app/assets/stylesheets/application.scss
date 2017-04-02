@@ -1,0 +1,25 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  position: relative;
+  left: 60px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}

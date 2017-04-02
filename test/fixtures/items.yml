@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor_id: 1
+  item_status_id: 1
+  tag_type_id: 1
+  item_category_id: 1
+  building_id: 1
+  serial_number: MyString
+  item_name: MyString
+
+two:
+  vendor_id: 1
+  item_status_id: 1
+  tag_type_id: 1
+  item_category_id: 1
+  building_id: 1
+  serial_number: MyString
+  item_name: MyString
