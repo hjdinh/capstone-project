@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Zips</h1>
-
+<%= form_tag(zips_path, method: :get) do %>
+    <%= text_field_tag :zip %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
 <table>
   <thead>
     <tr>

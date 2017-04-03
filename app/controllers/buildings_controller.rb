@@ -6,7 +6,7 @@ class BuildingsController < ApplicationController
   def index
     @buildings = Building.all
     @buildings = if params[:building]
-                 Building.where('building_name LIKE ? OR building_code LIKE ? OR building_number', "%#{params[:building]}%", "%#{params[:building]}%")
+                 Building.where('building_name LIKE ? OR building_code LIKE ? OR building_number LIKE ?', "%#{params[:building]}%", "%#{params[:building]}%", "%#{params[:building]}%")
                else
                  Building.all
                end

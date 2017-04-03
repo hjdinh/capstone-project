@@ -1,10 +1,11 @@
 class Item < ActiveRecord::Base
   has_many :loan_histories
-  belongs_to :package_request
+  has_many :package_requests
   belongs_to :building
   belongs_to :tag_type
   belongs_to :vendor
   belongs_to :item_status
+  belongs_to :item_category
   validates_presence_of :vendor_id
   validates_presence_of :item_status_id
   validates_presence_of :tag_type_id

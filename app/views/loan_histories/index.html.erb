@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Loan Histories</h1>
-
+<%= form_tag(loan_histories_path, method: :get) do %>
+    <%= text_field_tag :loan_history %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
 <table>
   <thead>
     <tr>

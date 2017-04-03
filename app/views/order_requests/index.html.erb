@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Order Requests</h1>
-
+<%= form_tag(order_requests_path, method: :get) do %>
+    <%= text_field_tag :order_request %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
 <table>
   <thead>
     <tr>
@@ -14,7 +17,7 @@
   <tbody>
     <% @order_requests.each do |order_request| %>
       <tr>
-        <td><%= order_request.user_id %></td>
+        <td><%= order_request.user.name %></td>
         <td><%= order_request.order_description %></td>
         <td><%= order_request.order_reason %></td>
         <td><%= link_to 'Show', order_request %></td>

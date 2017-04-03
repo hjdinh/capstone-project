@@ -5,6 +5,11 @@ class ItemLocationsController < ApplicationController
   # GET /item_locations.json
   def index
     @item_locations = ItemLocation.all
+    @item_locations = if params[:item_location]
+                        ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%")
+               else
+                 ItemLocation.all
+               end
   end
 
   # GET /item_locations/1

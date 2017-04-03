@@ -2,17 +2,17 @@
 
 <p>
   <strong>User:</strong>
-  <%= @package_request.user_id %>
+  <%= @package_request.user.name %>
 </p>
 
 <p>
   <strong>Item location:</strong>
-  <%= @package_request.item_location_id %>
+  <%= @package_request.item_location.location_address %>
 </p>
 
 <p>
   <strong>Item:</strong>
-  <%= @package_request.item_id %>
+  <%= @package_request.item.item_name %>
 </p>
 
 <p>

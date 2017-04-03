@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :vendor_id %><br>
-    <%= f.number_field :vendor_id %>
+    <%= f.collection_select :vendor_id, Vendor.all, :id, :vendor_name %>
   </div>
   <div class="field">
     <%= f.label :item_status_id %><br>
-    <%= f.number_field :item_status_id %>
+    <%= f.collection_select :item_status_id, ItemStatus.all, :id, :availability %>
   </div>
   <div class="field">
     <%= f.label :tag_type_id %><br>
-    <%= f.number_field :tag_type_id %>
+    <%= f.collection_select :tag_type_id, TagType.all, :id, :tag_type %>
   </div>
   <div class="field">
     <%= f.label :item_category_id %><br>
-    <%= f.number_field :item_category_id %>
+    <%= f.collection_select :item_category_id, ItemCategory.all, :id, :category %>
   </div>
   <div class="field">
     <%= f.label :building_id %><br>
-    <%= f.number_field :building_id %>
+    <%= f.collection_select :building_id, Building.all, :id, :building_name %>
   </div>
   <div class="field">
     <%= f.label :serial_number %><br>

@@ -1,11 +1,9 @@
 class HomeController < ApplicationController
-  def index
+  def home
     if user_signed_in?
-        redirect_to package_requests_path
+        redirect_to home_path
     else
         redirect_to new_user_session_path
     end
-
   end
-
 end

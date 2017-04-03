@@ -6,6 +6,11 @@ class ZipsController < ApplicationController
   # GET /zips.json
   def index
     @zips = Zip.all
+    @zips = if params[:zip]
+                 Zip.joins(:city).where('zipcode LIKE ? OR city_name LIKE ?', "%#{params[:zip]}%", "%#{params[:zip]}%")
+               else
+                 Zip.all
+               end
   end
 
   # GET /zips/1

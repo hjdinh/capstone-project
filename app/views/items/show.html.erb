@@ -2,27 +2,27 @@
 
 <p>
   <strong>Vendor:</strong>
-  <%= @item.vendor_id %>
+  <%= @item.vendor.vendor_name %>
 </p>
 
 <p>
   <strong>Item status:</strong>
-  <%= @item.item_status_id %>
+  <%= @item.item_status.availability %>
 </p>
 
 <p>
   <strong>Tag type:</strong>
-  <%= @item.tag_type_id %>
+  <%= @item.tag_type.tag_type %>
 </p>
 
 <p>
   <strong>Item category:</strong>
-  <%= @item.item_category_id %>
+  <%= @item.item_category.category %>
 </p>
 
 <p>
   <strong>Building:</strong>
-  <%= @item.building_id %>
+  <%= @item.building.building_name %>
 </p>
 
 <p>

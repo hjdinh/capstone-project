@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root 'home#index'
+  get "home", to: "static_pages#home"
+
+  root 'home#home'
   resources :package_requests
   resources :zips
   resources :countries
@@ -16,6 +18,7 @@ Rails.application.routes.draw do
   resources :loan_histories
   resources :order_requests
   resources :package_requests
+  resources :home
   devise_for :users, controllers: {registrations: "registrations"}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

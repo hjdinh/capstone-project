@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Items</h1>
-
+<%= form_tag(items_path, method: :get) do %>
+    <%= text_field_tag :item %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
 <table>
   <thead>
     <tr>
@@ -18,11 +21,11 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
-        <td><%= item.vendor_id %></td>
-        <td><%= item.item_status_id %></td>
-        <td><%= item.tag_type_id %></td>
-        <td><%= item.item_category_id %></td>
-        <td><%= item.building_id %></td>
+        <td><%= item.vendor.vendor_name %></td>
+        <td><%= item.item_status.availability %></td>
+        <td><%= item.tag_type.tag_type %></td>
+        <td><%= item.item_category.category %></td>
+        <td><%= item.building.building_name %></td>
         <td><%= item.serial_number %></td>
         <td><%= item.item_name %></td>
         <td><%= link_to 'Show', item %></td>

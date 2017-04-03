@@ -6,7 +6,7 @@ class VendorsController < ApplicationController
   def index
     @vendors = Vendor.all
     @vendors = if params[:vendor]
-                 Vendor.where('vendor_name LIKE ? OR email', "%#{params[:vendor]}%")
+                 Vendor.where('vendor_name LIKE ? OR email LIKE ?', "%#{params[:vendor]}%", "%#{params[:vendor]}%")
                else
                  Vendor.all
                end

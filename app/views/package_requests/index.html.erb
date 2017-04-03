@@ -19,9 +19,9 @@
   <tbody>
     <% @package_requests.each do |package_request| %>
       <tr>
-        <td><%= package_request.user_id %></td>
-        <td><%= package_request.item_location_id %></td>
-        <td><%= package_request.item_id %></td>
+        <td><%= package_request.user.name %></td>
+        <td><%= package_request.item_location.location_address %></td>
+        <td><%= package_request.item.item_name %></td>
         <td><%= package_request.item_condition %></td>
         <td><%= package_request.package_status %></td>
         <td><%= package_request.check_in %></td>

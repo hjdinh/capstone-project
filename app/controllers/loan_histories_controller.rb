@@ -5,6 +5,11 @@ class LoanHistoriesController < ApplicationController
   # GET /loan_histories.json
   def index
     @loan_histories = LoanHistory.all
+    @loan_histories = if params[:loan_history]
+                        LoanHistory.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
+               else
+                 LoanHistory.all
+               end
   end
 
   # GET /loan_histories/1

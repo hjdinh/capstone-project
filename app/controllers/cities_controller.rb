@@ -5,6 +5,11 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
+    @cities = if params[:city]
+                 City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
+               else
+                 City.all
+               end
   end
 
   # GET /cities/1

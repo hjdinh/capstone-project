@@ -5,6 +5,11 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all
+    @items = if params[:item]
+                 Item.joins(:vendor).joins(:item_status).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name LIKE ? OR availability LIKE ? OR tag_type LIKE ? OR category LIKE ? OR building_name LIKE ? OR serial_number LIKE ? OR item_name LIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
+               else
+                 Item.all
+               end
   end
 
   # GET /items/1
