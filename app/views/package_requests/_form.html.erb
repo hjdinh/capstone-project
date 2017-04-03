@@ -13,6 +13,7 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
+<<<<<<< HEAD
     <%= f.collection_select :user_id, User.all, :id, :name %>
   </div>
   <div class="field">
@@ -22,6 +23,17 @@
   <div class="field">
     <%= f.label :item_id %><br>
     <%= f.collection_select :item_id, Item.all, :id, :item_name %>
+=======
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :item_location_id %><br>
+    <%= f.number_field :item_location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :item_id %><br>
+    <%= f.number_field :item_id %>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   </div>
   <div class="field">
     <%= f.label :item_condition %><br>

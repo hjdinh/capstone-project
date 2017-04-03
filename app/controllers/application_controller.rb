@@ -3,10 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   def authorize_admin
     redirect_to :back, status: 401 unless current_user.admin
     #redirects to previous page
   end
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 end

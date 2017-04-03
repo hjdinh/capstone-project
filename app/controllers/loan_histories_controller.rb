@@ -6,6 +6,7 @@ class LoanHistoriesController < ApplicationController
   def index
     @loan_histories = LoanHistory.all
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     @loan_histories = if params[:loan_history]
                         LoanHistory.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
@@ -13,6 +14,8 @@ class LoanHistoriesController < ApplicationController
                  LoanHistory.all
                end
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   # GET /loan_histories/1

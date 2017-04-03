@@ -2,14 +2,20 @@
 
 one:
 <<<<<<< HEAD
+<<<<<<< HEAD
   city_name: MyString
 
 two:
 =======
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   state_id: 1
   city_name: MyString
 
 two:
   state_id: 1
+<<<<<<< HEAD
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   city_name: MyString

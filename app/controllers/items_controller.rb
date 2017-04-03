@@ -6,6 +6,7 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     @items = if params[:item]
                  Item.joins(:vendor).joins(:item_status).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name LIKE ? OR availability LIKE ? OR tag_type LIKE ? OR category LIKE ? OR building_name LIKE ? OR serial_number LIKE ? OR item_name LIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
@@ -13,6 +14,8 @@ class ItemsController < ApplicationController
                  Item.all
                end
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   # GET /items/1
@@ -78,9 +81,13 @@ class ItemsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
 <<<<<<< HEAD
+<<<<<<< HEAD
       params.require(:item).permit(:vendor_id, :item_status_id, :tag_status_id, :building_id, :serial_number, :item_name)
 =======
       params.require(:item).permit(:vendor_id, :item_status_id, :tag_type_id, :item_category_id, :building_id, :serial_number, :item_name)
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+      params.require(:item).permit(:vendor_id, :item_status_id, :tag_type_id, :item_category_id, :building_id, :serial_number, :item_name)
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     end
 end

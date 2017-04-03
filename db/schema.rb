@@ -12,6 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170221002855) do
 
   create_table "buildings", force: :cascade do |t|
@@ -30,13 +31,24 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.integer  "building_number"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+=======
+ActiveRecord::Schema.define(version: 20170322161538) do
+
+  create_table "buildings", force: :cascade do |t|
+    t.integer  "building_number"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.string   "building_name"
     t.string   "building_code"
   end
 
   create_table "cities", force: :cascade do |t|
     t.integer  "state_id"
+<<<<<<< HEAD
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.string   "city_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -48,6 +60,7 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.datetime "updated_at",   null: false
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   create_table "forms", force: :cascade do |t|
     t.integer  "user_id"
@@ -65,6 +78,8 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
 =======
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   create_table "item_categories", force: :cascade do |t|
     t.string   "category"
     t.string   "description"
@@ -77,7 +92,10 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.string   "location_address"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+<<<<<<< HEAD
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   create_table "item_statuses", force: :cascade do |t|
@@ -90,6 +108,7 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.integer  "vendor_id"
     t.integer  "item_status_id"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.integer  "tag_status_id"
     t.integer  "building_id"
     t.integer  "serial_number"
@@ -97,6 +116,8 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
 =======
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.integer  "tag_type_id"
     t.integer  "item_category_id"
     t.integer  "building_id"
@@ -104,7 +125,10 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.string   "item_name"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+<<<<<<< HEAD
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   create_table "loan_histories", force: :cascade do |t|
@@ -125,6 +149,7 @@ ActiveRecord::Schema.define(version: 20170322161538) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   create_table "states", force: :cascade do |t|
     t.string   "state_name"
     t.datetime "created_at", null: false
@@ -134,6 +159,8 @@ ActiveRecord::Schema.define(version: 20170322161538) do
   create_table "tag_statuses", force: :cascade do |t|
     t.string   "tag_status"
 =======
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   create_table "package_requests", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "item_location_id"
@@ -150,11 +177,15 @@ ActiveRecord::Schema.define(version: 20170322161538) do
   create_table "states", force: :cascade do |t|
     t.integer  "country_id"
     t.string   "state_name"
+<<<<<<< HEAD
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   create_table "time_slots", force: :cascade do |t|
 =======
@@ -162,6 +193,11 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.string   "tag_type"
     t.string   "tag_desc"
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+  create_table "tag_types", force: :cascade do |t|
+    t.string   "tag_type"
+    t.string   "tag_desc"
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -181,9 +217,13 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     t.boolean  "admin"
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+    t.boolean  "admin"
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
@@ -197,10 +237,14 @@ ActiveRecord::Schema.define(version: 20170322161538) do
     t.string   "country"
     t.string   "phone_number"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.string   "zip"
 =======
     t.integer  "zip"
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+    t.integer  "zip"
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
@@ -208,9 +252,13 @@ ActiveRecord::Schema.define(version: 20170322161538) do
   create_table "zips", force: :cascade do |t|
     t.string   "zipcode"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     t.integer  "city_id"
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+    t.integer  "city_id"
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

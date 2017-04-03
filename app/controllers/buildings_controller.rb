@@ -6,6 +6,7 @@ class BuildingsController < ApplicationController
   def index
     @buildings = Building.all
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     @buildings = if params[:building]
                  Building.where('building_name LIKE ? OR building_code LIKE ? OR building_number LIKE ?', "%#{params[:building]}%", "%#{params[:building]}%", "%#{params[:building]}%")
@@ -13,6 +14,8 @@ class BuildingsController < ApplicationController
                  Building.all
                end
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   # GET /buildings/1
@@ -78,9 +81,13 @@ class BuildingsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def building_params
 <<<<<<< HEAD
+<<<<<<< HEAD
       params.require(:building).permit(:building_description, :building_name)
 =======
       params.require(:building).permit(:building_name, :building_code, :building_number)
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+      params.require(:building).permit(:building_name, :building_code, :building_number)
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     end
 end

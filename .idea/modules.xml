@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Concave_project.iml" filepath="$PROJECT_DIR$/Concave_project.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/Updated_project.iml" filepath="$PROJECT_DIR$/Updated_project.iml" />
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     </modules>
   </component>
 </project>

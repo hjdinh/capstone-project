@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -12,21 +13,32 @@
 
 <h1>States</h1>
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+
+<h1>Listing States</h1>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 
 <table>
   <thead>
     <tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <th>Country</th>
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
       <th>State name</th>
+=======
+      <th>Country</th>
+      <th>State name</th>
+      <th colspan="3"></th>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     </tr>
   </thead>
 
   <tbody>
     <% @states.each do |state| %>
       <tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         <td><%= state.country.country_name %></td>
@@ -35,6 +47,13 @@
         <td><%= link_to 'Show', state %></td>
         <td><%= link_to 'Edit', edit_state_path(state) %></td>
         <td><%= link_to 'Delete', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+=======
+        <td><%= state.country_id %></td>
+        <td><%= state.state_name %></td>
+        <td><%= link_to 'Show', state %></td>
+        <td><%= link_to 'Edit', edit_state_path(state) %></td>
+        <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
       </tr>
     <% end %>
   </tbody>

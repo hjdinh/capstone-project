@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Item.delete_all
 Vendor.delete_all
@@ -91,3 +92,5 @@ end
 # Category.create( category_name: n, category_description: d )
 #end
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06

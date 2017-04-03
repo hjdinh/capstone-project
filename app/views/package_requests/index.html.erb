@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 <h1>Package Requests</h1>
+=======
+<h1>Listing Package Requests</h1>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 
 <table>
   <thead>
@@ -13,15 +17,25 @@
       <th>Check in</th>
       <th>Loan date</th>
       <th>Due date</th>
+<<<<<<< HEAD
+=======
+      <th colspan="3"></th>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     </tr>
   </thead>
 
   <tbody>
     <% @package_requests.each do |package_request| %>
       <tr>
+<<<<<<< HEAD
         <td><%= package_request.user.name %></td>
         <td><%= package_request.item_location.location_address %></td>
         <td><%= package_request.item.item_name %></td>
+=======
+        <td><%= package_request.user_id %></td>
+        <td><%= package_request.item_location_id %></td>
+        <td><%= package_request.item_id %></td>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
         <td><%= package_request.item_condition %></td>
         <td><%= package_request.package_status %></td>
         <td><%= package_request.check_in %></td>
@@ -29,7 +43,11 @@
         <td><%= package_request.due_date %></td>
         <td><%= link_to 'Show', package_request %></td>
         <td><%= link_to 'Edit', edit_package_request_path(package_request) %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Delete', package_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+=======
+        <td><%= link_to 'Destroy', package_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
       </tr>
     <% end %>
   </tbody>

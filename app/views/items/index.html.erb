@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -17,11 +18,17 @@
     <%= submit_tag 'Search', name: nil %>
 <% end %><br>
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+
+<h1>Listing Items</h1>
+
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 <table>
   <thead>
     <tr>
       <th>Vendor</th>
       <th>Item status</th>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <th>Tag status</th>
 =======
@@ -31,12 +38,21 @@
       <th>Building</th>
       <th>Serial number</th>
       <th>Item name</th>
+=======
+      <th>Tag type</th>
+      <th>Item category</th>
+      <th>Building</th>
+      <th>Serial number</th>
+      <th>Item name</th>
+      <th colspan="3"></th>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     </tr>
   </thead>
 
   <tbody>
     <% @items.each do |item| %>
       <tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <td><%= item.vendor_id %></td>
         <td><%= item.item_status_id %></td>
@@ -49,11 +65,22 @@
         <td><%= item.item_category.category %></td>
         <td><%= item.building.building_name %></td>
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
+=======
+        <td><%= item.vendor_id %></td>
+        <td><%= item.item_status_id %></td>
+        <td><%= item.tag_type_id %></td>
+        <td><%= item.item_category_id %></td>
+        <td><%= item.building_id %></td>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
         <td><%= item.serial_number %></td>
         <td><%= item.item_name %></td>
         <td><%= link_to 'Show', item %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+=======
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
       </tr>
     <% end %>
   </tbody>

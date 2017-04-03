@@ -13,6 +13,7 @@
 
   <div class="field">
     <%= f.label :vendor_id %><br>
+<<<<<<< HEAD
     <%= f.collection_select :vendor_id, Vendor.all, :id, :vendor_name %>
   </div>
   <div class="field">
@@ -35,6 +36,25 @@
   <div class="field">
     <%= f.label :building_id %><br>
     <%= f.collection_select :building_id, Building.all, :id, :building_name %>
+=======
+    <%= f.number_field :vendor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :item_status_id %><br>
+    <%= f.number_field :item_status_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_type_id %><br>
+    <%= f.number_field :tag_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :item_category_id %><br>
+    <%= f.number_field :item_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :building_id %><br>
+    <%= f.number_field :building_id %>
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   </div>
   <div class="field">
     <%= f.label :serial_number %><br>

@@ -5,11 +5,14 @@ class ItemLocationsController < ApplicationController
   # GET /item_locations.json
   def index
     @item_locations = ItemLocation.all
+<<<<<<< HEAD
     @item_locations = if params[:item_location]
                         ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%")
                else
                  ItemLocation.all
                end
+=======
+>>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 
   # GET /item_locations/1
