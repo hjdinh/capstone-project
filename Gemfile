@@ -50,10 +50,6 @@ group :development do
   gem 'spring'
   gem 'devise'
 
-  gem 'devise'
   gem 'rails_admin'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-
 end
 
