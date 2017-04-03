@@ -1,2 +1,62 @@
 @import "bootstrap-sprockets";
+<<<<<<< HEAD
 @import "bootstrap";
+=======
+@import "bootstrap";
+
+.navbar-fixed-left {
+  width: 140px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  top: 50px;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;
+  width: 139px;
+}
+
+.row {
+  padding-left: 200px;
+  padding-top: 50px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.jumbotron {
+  font-family: serif;
+  padding: 50px;
+  width: 700px;
+  float: right;
+  position: relative;
+  right: 100px;
+}
+
+.panel-red {
+  border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+  border-color: #d9534f;
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.panel-red > a {
+  color: #d9534f;
+}
+
+.col-sm-4 {
+  float: left;
+}
+
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228

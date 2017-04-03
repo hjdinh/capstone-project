@@ -2,6 +2,14 @@
 
 one:
   zipcode: MyString
+<<<<<<< HEAD
 
 two:
   zipcode: MyString
+=======
+  city_id: 1
+
+two:
+  zipcode: MyString
+  city_id: 1
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228

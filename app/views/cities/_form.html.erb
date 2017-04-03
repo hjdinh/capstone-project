@@ -12,9 +12,19 @@
   <% end %>
 
   <div class="field">
+<<<<<<< HEAD
     <%= f.label :city_name %><br>
     <%= f.text_field :city_name %>
   </div>
+=======
+    <%= f.label :state_id %><br>
+    <%= f.collection_select :state_id, State.all, :id, :state_name%>
+  </div>
+  <div class="field">
+    <%= f.label :city_name %><br>
+    <%= f.text_field :city_name %>
+  </div><br>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -8,10 +9,22 @@
 </style>
 <h1>Listing Zips</h1>
 
+=======
+
+<h1>Zips</h1>
+<%= form_tag(zips_path, method: :get) do %>
+    <%= text_field_tag :zip %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 <table>
   <thead>
     <tr>
       <th>Zipcode</th>
+<<<<<<< HEAD
+=======
+      <th>City</th>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     </tr>
   </thead>
 
@@ -19,6 +32,10 @@
     <% @zips.each do |zip| %>
       <tr>
         <td><%= zip.zipcode %></td>
+<<<<<<< HEAD
+=======
+        <td><%= zip.city.city_name %></td>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
         <td><%= link_to 'Show', zip %></td>
         <td><%= link_to 'Edit', edit_zip_path(zip) %></td>
         <td><%= link_to 'Delete', zip, method: :delete, data: { confirm: 'Are you sure?' } %></td>

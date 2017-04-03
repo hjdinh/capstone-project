@@ -54,7 +54,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+<<<<<<< HEAD
     concurrent-ruby (1.0.4)
+=======
+    concurrent-ruby (1.0.5)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -64,17 +68,38 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+<<<<<<< HEAD
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.8.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
+=======
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
+    globalid (0.3.7)
+      activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
+    i18n (0.8.1)
+    jbuilder (2.6.3)
+      activesupport (>= 3.0.0, < 5.2)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
       multi_json (~> 1.2)
     jquery-rails (4.2.2)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+<<<<<<< HEAD
     json (1.8.6)
+=======
+    jquery-ui-rails (5.0.5)
+      railties (>= 3.2.16)
+    json (1.8.6)
+    kaminari (0.17.0)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -85,10 +110,20 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
+<<<<<<< HEAD
+=======
+    nested_form (0.3.2)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     rack (1.6.5)
+<<<<<<< HEAD
+=======
+    rack-pjax (1.0.0)
+      nokogiri (~> 1.5)
+      rack (>= 1.1)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.4)
@@ -110,6 +145,22 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+<<<<<<< HEAD
+=======
+    rails_admin (1.1.1)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0, < 5)
+      haml (~> 4.0)
+      jquery-rails (>= 3.0, < 5)
+      jquery-ui-rails (~> 5.0)
+      kaminari (~> 0.14)
+      nested_form (~> 0.3)
+      rack-pjax (>= 0.7)
+      rails (>= 4.0, < 6)
+      remotipart (~> 1.3)
+      sass-rails (>= 4.0, < 6)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     railties (4.2.4)
       actionpack (= 4.2.4)
       activesupport (= 4.2.4)
@@ -117,6 +168,10 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     rdoc (4.3.0)
+<<<<<<< HEAD
+=======
+    remotipart (1.3.1)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.23)
@@ -140,16 +195,26 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
     thor (0.19.4)
+<<<<<<< HEAD
     thread_safe (0.3.5)
+=======
+    thread_safe (0.3.6)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     tilt (2.0.6)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+<<<<<<< HEAD
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
     warden (1.2.6)
+=======
+    uglifier (3.1.7)
+      execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
       rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
@@ -161,7 +226,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   autoprefixer-rails
+=======
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
@@ -169,6 +237,10 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.4)
+<<<<<<< HEAD
+=======
+  rails_admin
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

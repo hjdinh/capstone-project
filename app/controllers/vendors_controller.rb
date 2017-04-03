@@ -5,6 +5,14 @@ class VendorsController < ApplicationController
   # GET /vendors.json
   def index
     @vendors = Vendor.all
+<<<<<<< HEAD
+=======
+    @vendors = if params[:vendor]
+                 Vendor.where('vendor_name LIKE ? OR email LIKE ?', "%#{params[:vendor]}%", "%#{params[:vendor]}%")
+               else
+                 Vendor.all
+               end
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   end
 
   # GET /vendors/1
@@ -69,6 +77,10 @@ class VendorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vendor_params
+<<<<<<< HEAD
       params.require(:vendor).permit(:vendor_name, :email, :city, :state, :country, :phone_number, :zip)
+=======
+      params.require(:vendor).permit(:vendor_name, :email)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     end
 end

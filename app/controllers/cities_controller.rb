@@ -5,6 +5,14 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
+<<<<<<< HEAD
+=======
+    @cities = if params[:city]
+                 City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
+               else
+                 City.all
+               end
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   end
 
   # GET /cities/1
@@ -69,6 +77,10 @@ class CitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def city_params
+<<<<<<< HEAD
       params.require(:city).permit(:city_name)
+=======
+      params.require(:city).permit(:state_id, :city_name)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     end
 end

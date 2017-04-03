@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<<<<<<< HEAD
   <strong>Building description:</strong>
   <%= @building.building_description %>
 </p>
@@ -8,6 +9,20 @@
 <p>
   <strong>Building name:</strong>
   <%= @building.building_name %>
+=======
+  <strong>Building Name:</strong>
+  <%= @building.building_name %>
+</p>
+
+<p>
+  <strong>Building Code:</strong>
+  <%= @building.building_code %>
+</p>
+
+<p>
+  <strong>Building Number:</strong>
+  <%= @building.building_number %>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 </p>
 
 <%= link_to 'Edit', edit_building_path(@building) %> |

@@ -10,6 +10,7 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" project-jdk-name="rbenv: 2.2.3" project-jdk-type="RUBY_SDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+<<<<<<< HEAD
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
@@ -26,4 +27,6 @@
       </state>
     </states>
   </component>
+=======
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 </project>

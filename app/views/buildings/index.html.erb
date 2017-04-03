@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -13,14 +14,34 @@
     <tr>
       <th>Building description</th>
       <th>Building name</th>
+=======
+
+<h1>Buildings</h1>
+<%= form_tag(buildings_path, method: :get) do %>
+    <%= text_field_tag :building %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
+<table>
+  <thead>
+    <tr>
+      <th>Building Name</th>
+      <th>Building Code</th>
+      <th>Building Number</th>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     </tr>
   </thead>
 
   <tbody>
     <% @buildings.each do |building| %>
       <tr>
+<<<<<<< HEAD
         <td><%= building.building_description %></td>
         <td><%= building.building_name %></td>
+=======
+        <td><%= building.building_name %></td>
+        <td><%= building.building_code %></td>
+        <td><%= building.building_number %></td>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
         <td><%= link_to 'Show', building %></td>
         <td><%= link_to 'Edit', edit_building_path(building) %></td>
         <td><%= link_to 'Delete', building, method: :delete, data: { confirm: 'Are you sure?' } %></td>

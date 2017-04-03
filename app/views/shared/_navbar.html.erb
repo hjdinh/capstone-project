@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p>Welcome <%=  %> - <%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %>
 <ul class="nav nav-tabs">
   <li role="presentation"><a href="forms">Forms</a></li>
@@ -14,3 +15,32 @@
   <li role="presentation"><a href="cities">City</a></li>
   <li role="presentation"><a href="zips">Zip Code</a></li>
 </ul>
+=======
+<div id="wrapper">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <a class="navbar-brand" href="home"><img src="http://www.uh.edu/marketing/brand/graphic-standards/_img/logo-nonbeveled-interlocking-uh-red.png" width="25" height="25"></a>
+  <div style='float: right;'><%= link_to "Sign Out", destroy_user_session_path, :method => 'delete' %>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-left">
+  <ul class="nav navbar-nav">
+    <li><a href="admin">Admin</a></li>
+    <li><a href="package_requests">Package Request</a></li>
+    <li><a href="items">Items</a></li>
+    <li><a href="item_statuses">Item Status</a></li>
+    <li><a href="item_categories">Item Category</a></li>
+    <li><a href="item_locations">Item Location</a></li>
+    <li><a href="loan_histories">Loan History</a></li>
+    <li><a href="order_requests">Order Request</a></li>
+    <li><a href="tag_types">Tag Type</a></li>
+    <li><a href="vendors">Vendor</a></li>
+    <li><a href="buildings">Building</a></li>
+    <li><a href="countries">Country</a></li>
+    <li><a href="states">State</a></li>
+    <li><a href="cities">City</a></li>
+    <li><a href="zips">Zip Code</a></li>
+  </ul>
+</div>
+  </nav>
+</div>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228

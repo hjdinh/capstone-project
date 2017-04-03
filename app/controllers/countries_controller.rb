@@ -5,6 +5,14 @@ class CountriesController < ApplicationController
   # GET /countries.json
   def index
     @countries = Country.all
+<<<<<<< HEAD
+=======
+    @countries = if params[:country]
+                Country.where('country_name LIKE ?', "%#{params[:country]}%")
+              else
+                Country.all
+              end
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   end
 
   # GET /countries/1

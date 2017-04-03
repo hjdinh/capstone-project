@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Package Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Item location</th>
+      <th>Item</th>
+      <th>Item condition</th>
+      <th>Package status</th>
+      <th>Check in</th>
+      <th>Loan date</th>
+      <th>Due date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @package_requests.each do |package_request| %>
+      <tr>
+        <td><%= package_request.user.name %></td>
+        <td><%= package_request.item_location.location_address %></td>
+        <td><%= package_request.item.item_name %></td>
+        <td><%= package_request.item_condition %></td>
+        <td><%= package_request.package_status %></td>
+        <td><%= package_request.check_in %></td>
+        <td><%= package_request.loan_date %></td>
+        <td><%= package_request.due_date %></td>
+        <td><%= link_to 'Show', package_request %></td>
+        <td><%= link_to 'Edit', edit_package_request_path(package_request) %></td>
+        <td><%= link_to 'Delete', package_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Package request', new_package_request_path %>

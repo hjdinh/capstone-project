@@ -1,7 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   state_name: MyString
 
 two:
+=======
+  country_id: 1
+  state_name: MyString
+
+two:
+  country_id: 1
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   state_name: MyString

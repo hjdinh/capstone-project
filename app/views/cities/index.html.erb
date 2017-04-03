@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -11,6 +12,18 @@
 <table>
   <thead>
     <tr>
+=======
+
+<h1>Cities</h1>
+<%= form_tag(cities_path, method: :get) do %>
+    <%= text_field_tag :city %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
       <th>City name</th>
     </tr>
   </thead>
@@ -18,8 +31,13 @@
   <tbody>
     <% @cities.each do |city| %>
       <tr>
+<<<<<<< HEAD
         <td><%= city.city_name %></td>
 
+=======
+        <td><%= city.state.state_name %></td>
+        <td><%= city.city_name %></td>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
         <td><%= link_to 'Show', city %></td>
         <td><%= link_to 'Edit', edit_city_path(city) %></td>
         <td><%= link_to 'Delete', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>

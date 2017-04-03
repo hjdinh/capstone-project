@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :order_requests
   has_many :loan_histories
+<<<<<<< HEAD
   has_many :forms
   validates_presence_of :name
   validates_presence_of :email
@@ -13,4 +14,10 @@ class User < ActiveRecord::Base
   validates_presence_of :sign_in_count
   validates_presence_of :current_sign_in_ip
   validates_presence_of :last_sign_in_ip
+=======
+  has_many :package_requests
+  validates_presence_of :name
+  validates_presence_of :email
+  validates_presence_of :encrypted_password
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 end

@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
   <title>ConcaveProject</title>
+=======
+
+<head>
+  <title>Capstone Project</title>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<<<<<<< HEAD
 <body>
 
 <%= render 'shared/navbar' %>
 <%= yield %>
 
 </body>
+=======
+<% if user_signed_in? %>
+    <%= render 'shared/navbar' %>
+<% end %>
+<div id="wrapper">
+  <div class="row">
+    <body>
+    <%= yield %>
+    </body>
+  </div>
+</div>
+
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 </html>

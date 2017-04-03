@@ -3,15 +3,29 @@
 one:
   vendor_id: 1
   item_status_id: 1
+<<<<<<< HEAD
   tag_status_id: 1
   building_id: 1
   serial_number: 1
+=======
+  tag_type_id: 1
+  item_category_id: 1
+  building_id: 1
+  serial_number: MyString
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   item_name: MyString
 
 two:
   vendor_id: 1
   item_status_id: 1
+<<<<<<< HEAD
   tag_status_id: 1
   building_id: 1
   serial_number: 1
+=======
+  tag_type_id: 1
+  item_category_id: 1
+  building_id: 1
+  serial_number: MyString
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   item_name: MyString

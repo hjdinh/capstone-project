@@ -1,15 +1,24 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
   # get 'credential/user_id:string'
 
    # get 'credential/password:string'
 
   resources :time_slots
+=======
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  get "home", to: "static_pages#home"
+
+  root 'home#home'
+  resources :package_requests
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   resources :zips
   resources :countries
   resources :states
   resources :cities
   resources :item_statuses
+<<<<<<< HEAD
   resources :buildings
   resources :tag_statuses
   resources :vendors
@@ -21,6 +30,19 @@ Rails.application.routes.draw do
   resources :loan_histories
   resources :order_requests
   devise_for :users, controllers:{ registration: "registrations" }
+=======
+  resources :item_categories
+  resources :buildings
+  resources :tag_types
+  resources :vendors
+  resources :items
+  resources :item_locations
+  resources :loan_histories
+  resources :order_requests
+  resources :package_requests
+  resources :home
+  devise_for :users, controllers: {registrations: "registrations"}
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

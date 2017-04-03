@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<<<<<<< HEAD
 <style>
   td, th {
     border: 1px solid #dddddd;
@@ -8,6 +9,14 @@
 </style>
 <h1>Listing Countries</h1>
 
+=======
+
+<h1>Countries</h1>
+<%= form_tag(countries_path, method: :get) do %>
+    <%= text_field_tag :country %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %><br>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 <table>
   <thead>
     <tr>

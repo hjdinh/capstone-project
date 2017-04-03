@@ -3,11 +3,21 @@
 one:
   item_id: 1
   user_id: 1
+<<<<<<< HEAD
   check_in_date: 2017-02-20 18:15:32
   check_out_date: 2017-02-20 18:15:32
+=======
+  check_in_date: 2017-03-13 18:14:59
+  check_out_date: 2017-03-13 18:14:59
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 
 two:
   item_id: 1
   user_id: 1
+<<<<<<< HEAD
   check_in_date: 2017-02-20 18:15:32
   check_out_date: 2017-02-20 18:15:32
+=======
+  check_in_date: 2017-03-13 18:14:59
+  check_out_date: 2017-03-13 18:14:59
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228

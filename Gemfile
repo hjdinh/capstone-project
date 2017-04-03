@@ -13,9 +13,12 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+<<<<<<< HEAD
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
+=======
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -25,6 +28,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+<<<<<<< HEAD
+=======
+gem 'bootstrap-sass'
+
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,9 +50,16 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+<<<<<<< HEAD
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'devise'
+=======
+  gem 'devise'
+  gem 'rails_admin'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 end
 

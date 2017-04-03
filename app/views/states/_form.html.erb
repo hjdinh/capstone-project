@@ -12,6 +12,13 @@
   <% end %>
 
   <div class="field">
+<<<<<<< HEAD
+=======
+    <%= f.label :country_id %><br>
+    <%= f.collection_select :country_id, Country.all, :id, :country_name %>
+  </div>
+  <div class="field">
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     <%= f.label :state_name %><br>
     <%= f.text_field :state_name %>
   </div>

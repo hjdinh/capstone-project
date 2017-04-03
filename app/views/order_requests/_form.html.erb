@@ -13,7 +13,11 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
+<<<<<<< HEAD
     <%= f.number_field :user_id %>
+=======
+    <%= f.collection_select :user_id, User.all, :id, :name %>
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
   </div>
   <div class="field">
     <%= f.label :order_description %><br>

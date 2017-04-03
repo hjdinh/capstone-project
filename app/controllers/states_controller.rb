@@ -69,6 +69,10 @@ class StatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def state_params
+<<<<<<< HEAD
       params.require(:state).permit(:state_name)
+=======
+      params.require(:state).permit(:country_id, :state_name)
+>>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
     end
 end
