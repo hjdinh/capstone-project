@@ -1,9 +1,5 @@
 source 'http://rubygems.org'
 
-<<<<<<< HEAD
-=======
-
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
@@ -17,15 +13,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
-=======
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -35,19 +25,10 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 gem 'bootstrap-sass'
 
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
-=======
 gem 'tzinfo-data'
 
->>>>>>> 4258dfe8faef7f48f35e88d9bc2e049ef3cfb561
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -65,22 +46,16 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'devise'
-=======
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+
   gem 'devise'
   gem 'rails_admin'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-<<<<<<< HEAD
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+
 end
 
