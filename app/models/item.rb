@@ -7,6 +7,7 @@ class Item < ActiveRecord::Base
   belongs_to :tag_status
   belongs_to :vendor
   belongs_to :item_status
+<<<<<<< HEAD
   validates_presence_of :vendor_id
   validates_presence_of :item_status_id
   validates_presence_of :tag_status_id
@@ -33,4 +34,7 @@ class Item < ActiveRecord::Base
   validates_presence_of :building_id
   validates_presence_of :serial_number
   validates_presence_of :item_name
+=======
+
+>>>>>>> 4258dfe8faef7f48f35e88d9bc2e049ef3cfb561
 end

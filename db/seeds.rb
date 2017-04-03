@@ -5,16 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Item.delete_all
 Vendor.delete_all
 Building.delete_all
-#Category.delete_all
+ItemCategory.delete_all
 
 
-# buildings = Building.create
+
+
 
 
 # ITEM SEEDS
@@ -35,7 +33,9 @@ item_list = [
 ]
 
 item_list.each do |sn, name|
-  Item.create( serial_number: sn, item_name: name )
+
+  Item.create!(serial_number: sn, item_name: name )
+
 end
 
 
@@ -49,7 +49,9 @@ vendor_list = [
 ]
 
 vendor_list.each do |email, name|
-  Vendor.create( vendor_name: name, email: email )
+
+  Vendor.create!( vendor_name: name, email: email )
+
 end
 
 
@@ -74,23 +76,21 @@ building_list = [
 
 ]
 
-building_list.each do |desc, name|
-  Building.create( building_description: desc, building_name: name )
+building_list.each do |name, num|
+  Building.create!( building_name: name, building_number: num )
+
 end
 
 
 
 # CATEGORY SEEDS
 
-#category_list = [
-#   [ "Keyboard", "Fully functional keyboard" ], [ "Mouse", "Fully functional mouse" ], [ "PC", "Desktop PC for use by staff, students and faculty" ],
-#   [ "Latpop", "Laptop for use by staff, students and faculty. Various makes" ], [ "Monitor", "Sizes range from 20inch - 35inch" ], [ "Printer", "Various makes of printers" ],
-#    [ "Cable", "Various cables" ],
-#]
+category_list = [
+   [ "Keyboard", "Fully functional keyboard" ], [ "Mouse", "Fully functional mouse" ], [ "PC", "Desktop PC for use by staff, students and faculty" ],
+   [ "Latpop", "Laptop for use by staff, students and faculty. Various makes" ], [ "Monitor", "Sizes range from 20inch - 35inch" ], [ "Printer", "Various makes of printers" ],
+    [ "Cable", "Various cables" ],
+]
 
-#category_list.each do |n, d|
-# Category.create( category_name: n, category_description: d )
-#end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+category_list.each do |n, d|
+ ItemCategory.create!( category: n, description: d )
+end

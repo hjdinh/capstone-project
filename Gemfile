@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 <<<<<<< HEAD
 =======
@@ -37,12 +37,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 gem 'bootstrap-sass'
 
 >>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
 =======
 >>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+=======
+gem 'tzinfo-data'
+
+>>>>>>> 4258dfe8faef7f48f35e88d9bc2e049ef3cfb561
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

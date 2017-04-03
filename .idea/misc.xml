@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -9,6 +10,9 @@
   </component>
 <<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" project-jdk-name="rbenv: 2.2.3" project-jdk-type="RUBY_SDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="rbenv: 2.2.3" project-jdk-type="RUBY_SDK">
+>>>>>>> 4258dfe8faef7f48f35e88d9bc2e049ef3cfb561
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 <<<<<<< HEAD
