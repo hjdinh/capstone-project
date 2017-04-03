@@ -5,17 +5,11 @@ class OrderRequestsController < ApplicationController
   # GET /order_requests.json
   def index
     @order_requests = OrderRequest.all
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     @order_requests = if params[:order_request]
-                  OrderRequest.joins(:user).where('name LIKE ? OR order_description LIKE ? OR order_reason LIKE ?', "%#{params[:order_request]}%", "%#{params[:order_request]}%", "%#{params[:order_request]}%")
-               else
-                 OrderRequest.all
-               end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+                        OrderRequest.joins(:user).where('name LIKE ? OR order_description LIKE ? OR order_reason LIKE ?', "%#{params[:order_request]}%", "%#{params[:order_request]}%", "%#{params[:order_request]}%")
+                      else
+                        OrderRequest.all
+                      end
   end
 
   # GET /order_requests/1
@@ -73,13 +67,13 @@ class OrderRequestsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_order_request
-      @order_request = OrderRequest.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_order_request
+    @order_request = OrderRequest.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def order_request_params
-      params.require(:order_request).permit(:user_id, :order_description, :order_reason)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def order_request_params
+    params.require(:order_request).permit(:user_id, :order_description, :order_reason)
+  end
 end

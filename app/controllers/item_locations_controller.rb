@@ -5,14 +5,11 @@ class ItemLocationsController < ApplicationController
   # GET /item_locations.json
   def index
     @item_locations = ItemLocation.all
-<<<<<<< HEAD
     @item_locations = if params[:item_location]
                         ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%")
-               else
-                 ItemLocation.all
-               end
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+                      else
+                        ItemLocation.all
+                      end
   end
 
   # GET /item_locations/1
@@ -70,13 +67,13 @@ class ItemLocationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_item_location
-      @item_location = ItemLocation.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_item_location
+    @item_location = ItemLocation.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def item_location_params
-      params.require(:item_location).permit(:location_type, :location_address)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def item_location_params
+    params.require(:item_location).permit(:location_type, :location_address)
+  end
 end

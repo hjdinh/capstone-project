@@ -5,17 +5,11 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     @items = if params[:item]
-                 Item.joins(:vendor).joins(:item_status).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name LIKE ? OR availability LIKE ? OR tag_type LIKE ? OR category LIKE ? OR building_name LIKE ? OR serial_number LIKE ? OR item_name LIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
-               else
-                 Item.all
-               end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+               Item.joins(:vendor).joins(:item_status).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name LIKE ? OR availability LIKE ? OR tag_type LIKE ? OR category LIKE ? OR building_name LIKE ? OR serial_number LIKE ? OR item_name LIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
+             else
+               Item.all
+             end
   end
 
   # GET /items/1
@@ -73,21 +67,13 @@ class ItemsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_item
-      @item = Item.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def item_params
-<<<<<<< HEAD
-<<<<<<< HEAD
-      params.require(:item).permit(:vendor_id, :item_status_id, :tag_status_id, :building_id, :serial_number, :item_name)
-=======
-      params.require(:item).permit(:vendor_id, :item_status_id, :tag_type_id, :item_category_id, :building_id, :serial_number, :item_name)
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-      params.require(:item).permit(:vendor_id, :item_status_id, :tag_type_id, :item_category_id, :building_id, :serial_number, :item_name)
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def item_params
+    params.require(:item).permit(:vendor_id, :item_status_id, :tag_type_id, :item_category_id, :building_id, :serial_number, :item_name)
+  end
 end

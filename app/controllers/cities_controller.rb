@@ -5,17 +5,11 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     @cities = City.all
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     @cities = if params[:city]
-                 City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
-               else
-                 City.all
-               end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+                City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
+              else
+                City.all
+              end
   end
 
   # GET /cities/1
@@ -73,21 +67,13 @@ class CitiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_city
-      @city = City.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_city
+    @city = City.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def city_params
-<<<<<<< HEAD
-<<<<<<< HEAD
-      params.require(:city).permit(:city_name)
-=======
-      params.require(:city).permit(:state_id, :city_name)
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-      params.require(:city).permit(:state_id, :city_name)
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def city_params
+    params.require(:city).permit(:state_id, :city_name)
+  end
 end

@@ -1,28 +1,16 @@
 class ZipsController < ApplicationController
   before_action :set_zip, only: [:show, :edit, :update, :destroy]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   before_filter :authorize_admin, only: :index
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 
   # GET /zips
   # GET /zips.json
   def index
     @zips = Zip.all
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     @zips = if params[:zip]
-                 Zip.joins(:city).where('zipcode LIKE ? OR city_name LIKE ?', "%#{params[:zip]}%", "%#{params[:zip]}%")
-               else
-                 Zip.all
-               end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+              Zip.joins(:city).where('zipcode LIKE ? OR city_name LIKE ?', "%#{params[:zip]}%", "%#{params[:zip]}%")
+            else
+              Zip.all
+            end
   end
 
   # GET /zips/1
@@ -80,21 +68,13 @@ class ZipsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_zip
-      @zip = Zip.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_zip
+    @zip = Zip.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def zip_params
-<<<<<<< HEAD
-<<<<<<< HEAD
-      params.require(:zip).permit(:zipcode)
-=======
-      params.require(:zip).permit(:zipcode, :city_id)
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-      params.require(:zip).permit(:zipcode, :city_id)
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def zip_params
+    params.require(:zip).permit(:zipcode, :city_id)
+  end
 end

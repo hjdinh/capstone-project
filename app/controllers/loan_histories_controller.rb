@@ -5,17 +5,11 @@ class LoanHistoriesController < ApplicationController
   # GET /loan_histories.json
   def index
     @loan_histories = LoanHistory.all
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     @loan_histories = if params[:loan_history]
                         LoanHistory.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
-               else
-                 LoanHistory.all
-               end
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
+                      else
+                        LoanHistory.all
+                      end
   end
 
   # GET /loan_histories/1
@@ -73,13 +67,13 @@ class LoanHistoriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_loan_history
-      @loan_history = LoanHistory.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_loan_history
+    @loan_history = LoanHistory.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def loan_history_params
-      params.require(:loan_history).permit(:item_id, :user_id, :check_in_date, :check_out_date)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def loan_history_params
+    params.require(:loan_history).permit(:item_id, :user_id, :check_in_date, :check_out_date)
+  end
 end
