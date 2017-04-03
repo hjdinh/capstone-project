@@ -6,10 +6,10 @@ class BuildingsController < ApplicationController
   def index
     @buildings = Building.all
     @buildings = if params[:building]
-                   Building.where('building_name LIKE ? OR building_code LIKE ? OR building_number LIKE ?', "%#{params[:building]}%", "%#{params[:building]}%", "%#{params[:building]}%")
-                 else
-                   Building.all
-                 end
+                 Building.where('building_name LIKE ? OR building_code LIKE ? OR building_number LIKE ?', "%#{params[:building]}%", "%#{params[:building]}%", "%#{params[:building]}%")
+               else
+                 Building.all
+               end
   end
 
   # GET /buildings/1
@@ -67,13 +67,13 @@ class BuildingsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_building
-    @building = Building.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_building
+      @building = Building.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def building_params
-    params.require(:building).permit(:building_name, :building_code, :building_number)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def building_params
+      params.require(:building).permit(:building_name, :building_code, :building_number)
+    end
 end

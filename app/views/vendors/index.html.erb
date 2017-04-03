@@ -1,45 +1,15 @@
 <p id="notice"><%= notice %></p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<style>
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-</style>
-<h1>Listing Vendors</h1>
-
-=======
 
 <h1>Vendors</h1>
 <%= form_tag(vendors_path, method: :get) do %>
     <%= text_field_tag :vendor %>
     <%= submit_tag 'Search', name: nil %>
 <% end %><br>
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-
-<h1>Listing Vendors</h1>
-
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 <table>
   <thead>
     <tr>
       <th>Vendor name</th>
       <th>Email</th>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
-      <th>Phone number</th>
-      <th>Zip</th>
-=======
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-      <th colspan="3"></th>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     </tr>
   </thead>
 
@@ -48,23 +18,9 @@
       <tr>
         <td><%= vendor.vendor_name %></td>
         <td><%= vendor.email %></td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <td><%= vendor.city %></td>
-        <td><%= vendor.state %></td>
-        <td><%= vendor.country %></td>
-        <td><%= vendor.phone_number %></td>
-        <td><%= vendor.zip %></td>
-=======
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
         <td><%= link_to 'Show', vendor %></td>
         <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
         <td><%= link_to 'Delete', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-=======
-        <td><%= link_to 'Show', vendor %></td>
-        <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
-        <td><%= link_to 'Destroy', vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
       </tr>
     <% end %>
   </tbody>

@@ -6,10 +6,10 @@ class CountriesController < ApplicationController
   def index
     @countries = Country.all
     @countries = if params[:country]
-                   Country.where('country_name LIKE ?', "%#{params[:country]}%")
-                 else
-                   Country.all
-                 end
+                Country.where('country_name LIKE ?', "%#{params[:country]}%")
+              else
+                Country.all
+              end
   end
 
   # GET /countries/1
@@ -67,13 +67,13 @@ class CountriesController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_country
-    @country = Country.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_country
+      @country = Country.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def country_params
-    params.require(:country).permit(:country_name)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def country_params
+      params.require(:country).permit(:country_name)
+    end
 end

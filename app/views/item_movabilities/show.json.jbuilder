@@ -1,1 +1,0 @@
-json.partial! "item_movabilities/item_movability", item_movability: @item_movability

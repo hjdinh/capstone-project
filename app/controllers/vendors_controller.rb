@@ -67,13 +67,13 @@ class VendorsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_vendor
-    @vendor = Vendor.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_vendor
+      @vendor = Vendor.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def vendor_params
-    params.require(:vendor).permit(:vendor_name, :email)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def vendor_params
+      params.require(:vendor).permit(:vendor_name, :email)
+    end
 end

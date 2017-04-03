@@ -6,10 +6,10 @@ class CitiesController < ApplicationController
   def index
     @cities = City.all
     @cities = if params[:city]
-                City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
-              else
-                City.all
-              end
+                 City.joins(:state).where('state_name LIKE ? OR city_name LIKE ?', "%#{params[:city]}%", "%#{params[:city]}%")
+               else
+                 City.all
+               end
   end
 
   # GET /cities/1
@@ -67,13 +67,13 @@ class CitiesController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_city
-    @city = City.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_city
+      @city = City.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def city_params
-    params.require(:city).permit(:state_id, :city_name)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def city_params
+      params.require(:city).permit(:state_id, :city_name)
+    end
 end

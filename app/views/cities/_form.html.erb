@@ -12,28 +12,13 @@
   <% end %>
 
   <div class="field">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <%= f.label :city_name %><br>
-    <%= f.text_field :city_name %>
-  </div>
-=======
     <%= f.label :state_id %><br>
     <%= f.collection_select :state_id, State.all, :id, :state_name%>
-=======
-    <%= f.label :state_id %><br>
-    <%= f.number_field :state_id %>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   </div>
   <div class="field">
     <%= f.label :city_name %><br>
     <%= f.text_field :city_name %>
-<<<<<<< HEAD
   </div><br>
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-  </div>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   <div class="actions">
     <%= f.submit %>
   </div>

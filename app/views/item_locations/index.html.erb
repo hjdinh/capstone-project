@@ -1,24 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<<<<<<< HEAD
 <h1>Item Locations</h1>
 <%= form_tag(item_locations_path, method: :get) do %>
     <%= text_field_tag :item_location %>
     <%= submit_tag 'Search', name: nil %>
 <% end %><br>
-=======
-<h1>Listing Item Locations</h1>
-
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
 <table>
   <thead>
     <tr>
       <th>Location type</th>
       <th>Location address</th>
-<<<<<<< HEAD
-=======
-      <th colspan="3"></th>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
     </tr>
   </thead>
 
@@ -29,11 +20,7 @@
         <td><%= item_location.location_address %></td>
         <td><%= link_to 'Show', item_location %></td>
         <td><%= link_to 'Edit', edit_item_location_path(item_location) %></td>
-<<<<<<< HEAD
         <td><%= link_to 'Delete', item_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-=======
-        <td><%= link_to 'Destroy', item_location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
       </tr>
     <% end %>
   </tbody>

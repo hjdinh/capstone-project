@@ -7,10 +7,10 @@ class ZipsController < ApplicationController
   def index
     @zips = Zip.all
     @zips = if params[:zip]
-              Zip.joins(:city).where('zipcode LIKE ? OR city_name LIKE ?', "%#{params[:zip]}%", "%#{params[:zip]}%")
-            else
-              Zip.all
-            end
+                 Zip.joins(:city).where('zipcode LIKE ? OR city_name LIKE ?', "%#{params[:zip]}%", "%#{params[:zip]}%")
+               else
+                 Zip.all
+               end
   end
 
   # GET /zips/1
@@ -68,13 +68,13 @@ class ZipsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_zip
-    @zip = Zip.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_zip
+      @zip = Zip.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def zip_params
-    params.require(:zip).permit(:zipcode, :city_id)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def zip_params
+      params.require(:zip).permit(:zipcode, :city_id)
+    end
 end
