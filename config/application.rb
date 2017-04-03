@@ -6,15 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module ConcaveProject
-=======
 module UpdatedProject
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
-module UpdatedProject
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -28,8 +20,6 @@ module UpdatedProject
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     ActionMailer::Base.smtp_settings = {
 
         :address        => 'smtp.gmail.com',
@@ -41,25 +31,5 @@ module UpdatedProject
         :enable_starttls_auto => true
 
     }
-
-=======
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    #config.active_record.raise_in_transactional_callbacks = true
-
-    ActionMailer::Base.smtp_settings = {
-        :address  => 'smtp.gmail.com',
-        :domain   => 'mail.google.com',
-        :port     =>  587,
-        :user_name  => "mymailerapp@gmail.com",
-        :password =>  "weakpass",
-        :authentication => 'login',
-        :enable_starttls_auto =>  true
-    }
-<<<<<<< HEAD
->>>>>>> 7ed43a1aaee4e6343ead889d21b385df83919228
-=======
->>>>>>> a511f83882486e6fc6f4ba544c62fb3938b3ae06
   end
 end
