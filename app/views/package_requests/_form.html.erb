@@ -17,8 +17,9 @@
   </div>
   <div class="field">
     <%= f.label :item_location_id %><br>
-    <%= f.collection_select :item_location_id, ItemLocation.all, :id, :location_address %>
+    <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address %>
   </div>
+
   <div class="field">
     <%= f.label :item_id %><br>
     <%= f.collection_select :item_id, Item.all, :id, :item_name %>

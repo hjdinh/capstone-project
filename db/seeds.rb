@@ -25,8 +25,14 @@ TagType.delete_all
 statuses = ItemStatus.create ([{availability: 'Available'}, {availability: 'Unavailable'}])
 
 
+
 # TAG TYPE SEEDS
 tags = TagType.create ([{tag_type: 'UH'}, {tag_type: 'TIMES'}, {tag_type: 'N/A'}])
+
+
+
+# ITEM LOCATION SEEDS
+# ItemLocation.create ([{location_type: 'Movable'}, {location_type: 'Off-Campus'}, {tag_type: 'N/A'}])
 
 
 
