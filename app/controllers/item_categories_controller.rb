@@ -1,5 +1,6 @@
 class ItemCategoriesController < ApplicationController
   before_action :set_item_category, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize_admin, only: :index
 
   # GET /item_categories
   # GET /item_categories.json

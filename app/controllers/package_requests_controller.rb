@@ -6,6 +6,7 @@ class PackageRequestsController < ApplicationController
   # GET /package_requests.json
   def index
     @package_requests = PackageRequest.all
+    redirect_to new_package_request_path
   end
 
   # GET /package_requests/1
