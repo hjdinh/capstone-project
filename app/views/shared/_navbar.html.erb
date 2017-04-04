@@ -7,10 +7,10 @@
 <div class="navbar navbar-inverse navbar-fixed-left">
   <ul class="nav navbar-nav">
     <li><a href="admin">Admin</a></li>
-    <li><a href="package_requests">Package Request</a></li>
-    <li><a href="items">Items</a></li>
-    <li><a href="loan_histories">Loan History</a></li>
-    <li><a href="order_requests">Order Request</a></li>
+    <li><%= link_to 'Package Request', new_package_request_path %></li>
+    <li><%= link_to 'Items', items_path%></li>
+    <li><%= link_to 'Loan History', loan_histories_path %></li>
+    <li><%= link_to 'Order Requests', order_requests_path %></li>
   </ul>
 </div>
   </nav>
