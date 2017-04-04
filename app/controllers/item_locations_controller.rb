@@ -1,5 +1,6 @@
 class ItemLocationsController < ApplicationController
   before_action :set_item_location, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize_admin, only: :index
 
   # GET /item_locations
   # GET /item_locations.json

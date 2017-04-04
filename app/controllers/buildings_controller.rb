@@ -1,5 +1,6 @@
 class BuildingsController < ApplicationController
   before_action :set_building, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize_admin, only: :index
 
   # GET /buildings
   # GET /buildings.json
