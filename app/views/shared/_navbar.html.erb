@@ -1,16 +1,16 @@
 <div id="wrapper">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <a class="navbar-brand" href="home"><img src="http://www.uh.edu/marketing/brand/graphic-standards/_img/logo-nonbeveled-interlocking-uh-red.png" width="25" height="25"></a>
-  <div style='float: right;'><%= link_to "Sign Out", destroy_user_session_path, :method => 'delete' %>
+    <a class="navbar-brand" href="/home"><img src="http://www.uh.edu/marketing/brand/graphic-standards/_img/logo-nonbeveled-interlocking-uh-red.png" width="25" height="25"></a>
+  <div style='float: right;'><%= link_to "Sign Out", destroy_user_session_path, :method => 'delete' %> </div>
 </div>
 
 <div class="navbar navbar-inverse navbar-fixed-left">
   <ul class="nav navbar-nav">
-    <li><a href="admin">Admin</a></li>
-    <li><%= link_to 'Package Request', new_package_request_path %></li>
     <li><%= link_to 'Items', items_path%></li>
+    <li><%= link_to 'Package Request', new_package_request_path %></li>
     <li><%= link_to 'Loan History', loan_histories_path %></li>
     <li><%= link_to 'Order Requests', order_requests_path %></li>
+    <li><%= link_to 'Admin Console', rails_admin_path %></li>
   </ul>
 </div>
   </nav>
