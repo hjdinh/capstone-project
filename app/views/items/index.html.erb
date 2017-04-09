@@ -28,14 +28,9 @@
         <td><%= item.serial_number %></td>
         <td><%= item.vendor.vendor_name %></td>
         <td><%= item.building.building_name %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Item', new_item_path %>
