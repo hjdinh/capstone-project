@@ -12,12 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :location_type %><br>
-    <%= f.text_field :location_type %>
+    <%= f.label :user_id %><br>
+    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name %>
   </div>
+
+  <div class="field">
+    <%= f.label :location_type %><br>
+    <%= f.select(:location_type, options_for_select(['Movable', 'Off-Campus'], 3), {}, class: "chzn-select", style: "width: 100px") %>
+  </div>
+
   <div class="field">
     <%= f.label :location_address %><br>
-    <%= f.text_field :location_address %>
+    <%= f.text_field :location_address, style: "width: 700px" %>
   </div>
   <div class="actions">
     <%= f.submit %>

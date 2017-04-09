@@ -5,11 +5,11 @@ class ItemLocationsController < ApplicationController
   # GET /item_locations
   # GET /item_locations.json
   def index
-    @item_locations = ItemLocation.all
+    @item_locations = ItemLocation.where(:user_id => current_user.id)
     @item_locations = if params[:item_location]
                         ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%")
                else
-                 ItemLocation.all
+                 ItemLocation.where(:user_id => current_user.id)
                end
   end
 
@@ -75,6 +75,6 @@ class ItemLocationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_location_params
-      params.require(:item_location).permit(:location_type, :location_address)
+      params.require(:item_location).permit(:user_id, :location_type, :location_address)
     end
 end

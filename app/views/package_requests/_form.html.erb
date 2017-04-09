@@ -13,12 +13,13 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.collection_select :user_id, User.all, :id, :name %>
+    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name %>
   </div>
-  <div class="field">
-    <%= f.label :item_location_id %><br>
-    <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address %>
-  </div>
+
+    <div class="field">
+      <%= f.label :item_location_id %><br>
+      <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address %>
+    </div>
 
   <div class="field">
     <%= f.label :item_id %><br>
