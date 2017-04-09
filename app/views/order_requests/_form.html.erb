@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.collection_select :user_id, User.all, :id, :name %>
+    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name %>
   </div>
   <div class="field">
     <%= f.label :order_description %><br>

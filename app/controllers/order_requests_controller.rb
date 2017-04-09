@@ -4,11 +4,11 @@ class OrderRequestsController < ApplicationController
   # GET /order_requests
   # GET /order_requests.json
   def index
-    @order_requests = OrderRequest.all
+    @order_requests = OrderRequest.where(:user_id => current_user.id)
     @order_requests = if params[:order_request]
                   OrderRequest.joins(:user).where('name LIKE ? OR order_description LIKE ? OR order_reason LIKE ?', "%#{params[:order_request]}%", "%#{params[:order_request]}%", "%#{params[:order_request]}%")
                else
-                 OrderRequest.all
+                 OrderRequest.where(:user_id => current_user.id)
                end
   end
 

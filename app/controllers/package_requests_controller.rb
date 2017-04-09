@@ -5,7 +5,7 @@ class PackageRequestsController < ApplicationController
   # GET /package_requests
   # GET /package_requests.json
   def index
-    @package_requests = PackageRequest.all
+    @package_requests = PackageRequest.where(:user_id => current_user.id)
     redirect_to new_package_request_path
   end
 

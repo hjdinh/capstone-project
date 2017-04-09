@@ -13,33 +13,27 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name %>
+    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name, {},{ class: "chzn-select", style: "width: 120px" } %>
   </div>
 
     <div class="field">
       <%= f.label :item_location_id %><br>
-      <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address %>
+      <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address, {}, class: "chzn-select", style: "width: 120px" %>
     </div>
 
   <div class="field">
     <%= f.label :item_id %><br>
     <%= f.collection_select :item_id, Item.all, :id, :item_name %>
   </div>
+
   <div class="field">
     <%= f.label :item_condition %><br>
-    <%= f.text_field :item_condition %>
+    <%= f.select(:item_condition, options_for_select(['New', 'Like New', 'Moderate', 'Poor'], 3), {}, class: "chzn-select", style: "width: 120px") %>
   </div>
-  <div class="field">
-    <%= f.label :package_status %><br>
-    <%= f.text_field :package_status %>
-  </div>
-  <div class="field">
-    <%= f.label :check_in %><br>
-    <%= f.datetime_select :check_in %>
-  </div>
+
   <div class="field">
     <%= f.label :loan_date %><br>
-    <%= f.datetime_select :loan_date %>
+    <%= f.input :loan_date, :as => datetime_picker %>
   </div>
   <div class="field">
     <%= f.label :due_date %><br>
