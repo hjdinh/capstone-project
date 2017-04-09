@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data'
 gem 'rails-erd'
 gem 'database_cleaner'
-
+gem 'validates_timeliness'
 
 
 # Use ActiveModel has_secure_password

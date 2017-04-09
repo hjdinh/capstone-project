@@ -1,7 +1,7 @@
 <%= form_for(@package_request) do |f| %>
   <% if @package_request.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@package_request.errors.count, "error") %> prohibited this package_request from being saved:</h2>
+      <h4><%= pluralize(@package_request.errors.count, "error") %> prohibited your request from being saved. Please fix the following error(s):</h4>
 
       <ul>
       <% @package_request.errors.full_messages.each do |message| %>
@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name, {},{ class: "chzn-select", style: "width: 120px" } %>
+    <%= f.collection_select :user_id, User.where(:name => current_user.name), :id, :name,  {},{class: "chzn-select", style: "width: 155px"}  %>
   </div>
 
     <div class="field">
       <%= f.label :item_location_id %><br>
-      <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address, {}, class: "chzn-select", style: "width: 120px" %>
+      <%= f.collection_select :item_location_id, ItemLocation.where(user_id: current_user), :id, :location_address, {}, class: "chzn-select", style: "width: 155px" %>
     </div>
 
   <div class="field">
@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= f.label :item_condition %><br>
-    <%= f.select(:item_condition, options_for_select(['New', 'Like New', 'Moderate', 'Poor'], 3), {}, class: "chzn-select", style: "width: 120px") %>
+    <%= f.select(:item_condition, options_for_select(['New', 'Like New', 'Moderate', 'Poor'], 3), {}, class: "chzn-select", style: "width: 155px") %>
   </div>
 
   <div class="field">
@@ -38,9 +38,9 @@
 
   <div class="field">
     <%= f.label :due_date %><br>
-    <%= f.date_field :due_date, :value => Date.today.change(month: 8, day: 31) %>
+    <%= f.date_field :due_date, :value => Date.today.change(month: 8, day: 31), :readonly => true %>
   </div>
   <div class="actions">
-    <%= f.submit :class => "button", :onclick => "alert('Please pick up your package on the selected date.')" %>
+    <%= f.submit :class => "button" %>
   </div>
 <% end %>

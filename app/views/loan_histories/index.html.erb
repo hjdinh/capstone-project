@@ -9,8 +9,6 @@
   <thead>
     <tr>
       <th>Item</th>
-      <th>User</th>
-      <th>Check in date</th>
       <th>Check out date</th>
     </tr>
   </thead>
@@ -18,18 +16,11 @@
   <tbody>
     <% @loan_histories.each do |loan_history| %>
       <tr>
-        <td><%= loan_history.item_id %></td>
-        <td><%= loan_history.user_id %></td>
-        <td><%= loan_history.check_in_date %></td>
-        <td><%= loan_history.check_out_date %></td>
-        <td><%= link_to 'Show', loan_history %></td>
-        <td><%= link_to 'Edit', edit_loan_history_path(loan_history) %></td>
-        <td><%= link_to 'Delete', loan_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= loan_history.item.item_name %></td>
+        <td><%= loan_history.loan_date %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Loan history', new_loan_history_path %>

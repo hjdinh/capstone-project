@@ -4,11 +4,11 @@ class LoanHistoriesController < ApplicationController
   # GET /loan_histories
   # GET /loan_histories.json
   def index
-    @loan_histories = LoanHistory.all
+    @loan_histories = PackageRequest.where(:user_id => current_user.id)
     @loan_histories = if params[:loan_history]
-                        LoanHistory.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
+                        PackageRequest.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
                else
-                 LoanHistory.all
+                 PackageRequest.where(:user_id => current_user.id)
                end
   end
 
