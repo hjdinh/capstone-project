@@ -6,4 +6,14 @@ class ApplicationController < ActionController::Base
     redirect_to :back, status: 401 unless current_user.admin
     #redirects to previous page
   end
+  def after_sign_in_path_for(resource)
+    if resource.admin
+      rails_admin_path
+    else
+      home_path
+    end
+  end
+  def after_sign_out_path_for(resource)
+    new_user_session_path
+  end
 end
