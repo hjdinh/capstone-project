@@ -17,7 +17,7 @@
     <% @loan_histories.each do |loan_history| %>
       <tr>
         <td><%= loan_history.item.item_name %></td>
-        <td><%= loan_history.loan_date %></td>
+        <td><%= loan_history.loan_date.strftime('%Y-%m-%d') %></td>
       </tr>
     <% end %>
   </tbody>

@@ -6,7 +6,7 @@ class LoanHistoriesController < ApplicationController
   def index
     @loan_histories = PackageRequest.where(:user_id => current_user.id)
     @loan_histories = if params[:loan_history]
-                        PackageRequest.where('item_id LIKE ? OR user_id LIKE ? OR check_in_date LIKE ? OR check_out_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
+                        PackageRequest.joins(:item).where('item_name LIKE ? OR loan_date LIKE ?', "%#{params[:loan_history]}%", "%#{params[:loan_history]}%")
                else
                  PackageRequest.where(:user_id => current_user.id)
                end

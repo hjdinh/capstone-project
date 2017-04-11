@@ -6,4 +6,6 @@ class Item < ActiveRecord::Base
   belongs_to :vendor
   belongs_to :item_status
   belongs_to :item_category
+  scope :availability, -> {where(availability: true)}
+
 end

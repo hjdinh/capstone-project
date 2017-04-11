@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404174100) do
+ActiveRecord::Schema.define(version: 20170410185244) do
 
   create_table "buildings", force: :cascade do |t|
     t.string   "building_description"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20170404174100) do
     t.string   "item_name"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.boolean  "availability"
   end
 
   create_table "loan_histories", force: :cascade do |t|
