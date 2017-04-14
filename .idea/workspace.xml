@@ -93,8 +93,13 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="750">
               <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+=======
+            <state relative-caret-position="333">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+>>>>>>> fb18933e724fde6b15295af1e7a3c4df47446360
               <folding />
             </state>
           </provider>
@@ -1099,6 +1104,7 @@
       <workItem from="1490577073704" duration="808000" />
       <workItem from="1490585097066" duration="4434000" />
       <workItem from="1490646482421" duration="10867000" />
+<<<<<<< HEAD
       <workItem from="1490662089814" duration="3235000" />
       <workItem from="1490831630180" duration="6891000" />
       <workItem from="1490917082667" duration="11841000" />
@@ -1122,6 +1128,9 @@
       <workItem from="1491874058583" duration="464000" />
       <workItem from="1492132303243" duration="4044000" />
       <workItem from="1492204724458" duration="1679000" />
+=======
+      <workItem from="1490662089814" duration="1272000" />
+>>>>>>> fb18933e724fde6b15295af1e7a3c4df47446360
     </task>
     <task id="LOCAL-00001" summary="new updated project">
       <created>1490659897289</created>
@@ -1141,7 +1150,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="162873000" />
+=======
+    <option name="totallyTimeSpent" value="66611000" />
+>>>>>>> fb18933e724fde6b15295af1e7a3c4df47446360
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1561,8 +1574,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/item.rb">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+        <state relative-caret-position="333">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+>>>>>>> fb18933e724fde6b15295af1e7a3c4df47446360
           <folding />
         </state>
       </provider>
