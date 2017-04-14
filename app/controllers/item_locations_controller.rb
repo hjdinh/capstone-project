@@ -6,7 +6,7 @@ class ItemLocationsController < ApplicationController
   def index
     @item_locations = ItemLocation.where(:user_id => current_user.id)
     @item_locations = if params[:item_location]
-                        ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%")
+                        ItemLocation.where('location_type LIKE ? OR location_address LIKE ? ', "%#{params[:item_location]}%", "%#{params[:item_location]}%").where(:user_id => current_user.id)
                else
                  ItemLocation.where(:user_id => current_user.id)
                end
