@@ -89,6 +89,6 @@ items = [
 
 items.each do |ven, stat, cat, b, sn, name|
   Item.create!(item_name: name, item_status_id: stat, tag_type_id: tags.sample.id, item_category_id: cat,
-               serial_number: sn, vendor_id: ven, building_id: b,)
+               serial_number: sn, vendor_id: ven, building_id: b, availability: true)
 
 end
