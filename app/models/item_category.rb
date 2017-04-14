@@ -1,3 +1,3 @@
 class ItemCategory < ActiveRecord::Base
-  has_many :item
+  has_many :items
 end

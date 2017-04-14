@@ -28,4 +28,12 @@ class Item < ActiveRecord::Base
     item_category.category
   end
 
+  def category_item_describer
+    item_category.try(:category) ||  "n/a category"
+  end
+
+  def item_describer
+    item_name
+  end
 end
+

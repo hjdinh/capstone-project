@@ -32,12 +32,12 @@
 
 <p>
   <strong>Loan date:</strong>
-  <%= @package_request.loan_date %>
+  <%= @package_request.loan_date.strftime('%Y-%m-%d') %>
 </p>
 
 <p>
   <strong>Due date:</strong>
-  <%= @package_request.due_date %>
+  <%= @package_request.due_date.strftime('%Y-%m-%d') %>
 </p>
 
 <%= link_to 'Edit', edit_package_request_path(@package_request) %> |
