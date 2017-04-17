@@ -35,5 +35,10 @@ class Item < ActiveRecord::Base
   def item_describer
     item_name
   end
+
+  def yn
+    availability ? 'Yes' : 'No'
+  end
+
 end
 

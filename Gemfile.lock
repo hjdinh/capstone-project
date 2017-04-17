@@ -207,11 +207,13 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
+  bcrypt
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise
+  execjs
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.4)

@@ -29,6 +29,9 @@ gem 'tzinfo-data'
 gem 'rails-erd'
 gem 'database_cleaner'
 gem 'validates_timeliness'
+gem 'execjs'
+
+gem 'bcrypt', platforms: :ruby
 
 
 # Use ActiveModel has_secure_password

@@ -14,7 +14,7 @@
       <th>Serial number</th>
       <th>Vendor</th>
       <th>Building</th>
-      <th>Availability</th>
+      <th>Available</th>
     </tr>
   </thead>
 
@@ -27,7 +27,7 @@
         <td><%= item.serial_number %></td>
         <td><%= item.vendor.vendor_name %></td>
         <td><%= item.building.building_name %></td>
-        <td><%= item.availability %></td>
+        <td><%= item.yn %></td>
       </tr>
     <% end %>
   </tbody>
