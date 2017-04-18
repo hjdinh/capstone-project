@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :item_id %><br>
-    <%= f.collection_select :item_id, Item.availability, :id, :item_name %>
+    <%= f.collection_select :item_id, Item.where(:availability => true), :id, :item_name %>
   </div>
 
   <div class="field">
