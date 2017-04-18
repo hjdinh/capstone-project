@@ -30,6 +30,10 @@ gem 'database_cleaner'
 gem 'validates_timeliness'
 gem 'execjs'
 
+gem 'devise'
+
+gem 'rails_admin'
+
 gem 'bcrypt', platforms: :ruby
 
 
@@ -56,8 +60,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'devise'
 
-  gem 'rails_admin'
 end
 
