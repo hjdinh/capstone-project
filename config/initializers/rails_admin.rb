@@ -96,6 +96,8 @@ RailsAdmin.config do |config|
         list do
           # simply adding fields by their names (order will be maintained)
           include_fields :id, :building_name, :building_number, :building_code, :created_at, :updated_at
+
+          exclude_fields :building_description
         end
       end
     end
