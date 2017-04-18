@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  password: capstone
+  username: postgres
+  host: localhost
+
+development:
+    adapter: postgresql
+    encoding: unicode
+    database: capstone_development
+    pool: 5
+    username: postgres
+    password: capstone
+    host: localhost
+
+test:
+  <<: *default
+  database: capstone_test
+
+production:
+  <<: *default
+  database: capstone_production
