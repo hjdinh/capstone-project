@@ -55,6 +55,8 @@ RailsAdmin.config do |config|
         # only add these fields to display
         # on the list action
         # vendor_name
+        field :item_name
+
         field :vendor do
           # by default belongs_to/has_many association
           # is not queryable, so for references we add
