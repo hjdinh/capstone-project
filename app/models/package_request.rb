@@ -4,6 +4,7 @@ class PackageRequest < ActiveRecord::Base
   belongs_to :item_location
 
   validates_date :loan_date, :on_or_after => lambda { Date.current }
+  validates :item_location_id, :presence => {:message => 'Name cannot be blank, Task not saved'}
 
 end
 
