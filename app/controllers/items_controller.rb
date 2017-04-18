@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
     @items = if params[:item]
-                 Item.joins(:vendor).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name ILIKE ? OR tag_type ILIKE ? OR item_category_id ILIKE ? OR building_name ILIKE ? OR serial_number ILIKE ? OR item_name ILIKE ? OR availability ILIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
+                 Item.joins(:vendor).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name ILIKE ? OR tag_type ILIKE ? OR category ILIKE ? OR building_name ILIKE ? OR serial_number ILIKE ? OR item_name ILIKE ? OR availability ILIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
                else
                  Item.all
                end
