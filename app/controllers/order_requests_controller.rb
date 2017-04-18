@@ -6,7 +6,7 @@ class OrderRequestsController < ApplicationController
   def index
     @order_requests = OrderRequest.where(:user_id => current_user.id)
     @order_requests = if params[:order_request]
-                  OrderRequest.joins(:user).where('name LIKE ? OR order_description LIKE ? OR order_reason LIKE ?', "%#{params[:order_request]}%", "%#{params[:order_request]}%", "%#{params[:order_request]}%").where(:user_id => current_user.id)
+                  OrderRequest.joins(:user).where('name ILIKE ? OR order_description ILIKE ? OR order_reason ILIKE ?', "%#{params[:order_request]}%", "%#{params[:order_request]}%", "%#{params[:order_request]}%").where(:user_id => current_user.id)
                else
                  OrderRequest.where(:user_id => current_user.id)
                end
