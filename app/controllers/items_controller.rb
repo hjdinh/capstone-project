@@ -4,11 +4,11 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.where(:availability => true)
+    @items = Item.all
     @items = if params[:item]
                  Item.joins(:vendor).joins(:tag_type).joins(:item_category).joins(:building).where('vendor_name LIKE ? OR tag_type LIKE ? OR category LIKE ? OR building_name LIKE ? OR serial_number LIKE ? OR item_name LIKE ? OR availability LIKE ? ', "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%", "%#{params[:item]}%")
                else
-                 Item.where(:availability => true)
+                 Item.all
                end
   end
 

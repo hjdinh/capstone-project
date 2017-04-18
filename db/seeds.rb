@@ -22,7 +22,8 @@ TagType.delete_all
 
 
 
-
+# CREATE ADMIN USER
+User.create! ([{name: 'John Fitzgerald', email: 'dmbelcon@uh.edu', password: 'capstone', admin: true}])
 
 # ITEM STATUS SEEDS
 ItemStatus.create ([{availability: 'Available'}, {availability: 'Unavailable'}])
